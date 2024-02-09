@@ -71,7 +71,7 @@
 .days div{
     width: 57.5px;
     height: 50px;
-    font-size: 14px;
+    font-size: 12px;
     margin: 3px;
     display: flex;
     justify-content: center;
@@ -97,10 +97,37 @@
     align-items: center;
 }
 
-.credit p{
-    
-}
-
 a:link{
     color: #fecb6f;
 }
+
+
+
+@media (max-width: 600px) {
+    .calendar {
+        width: 100%; /* Adatta la larghezza del calendario alla larghezza dello schermo */
+        height: auto; /* Rendi l'altezza automatica per adattarsi al contenuto */
+        border-radius: 0; /* Opzionale: rimuovi il bordo arrotondato per un aspetto più adatto ai dispositivi mobili */
+    }
+
+    .month h1 {
+        font-size: 24px; /* Riduci la dimensione del titolo del mese */
+    }
+
+    .month p {
+        font-size: 14px; /* Riduci la dimensione del testo del sottotitolo */
+    }
+
+    .weekdays div, .days div {
+        font-size: 10px; /* Riduci la dimensione del testo per i giorni */
+    }
+
+    .days div {
+        /* Aggiusta la larghezza tenendo conto di un margine di 2px su ogni lato di una cella */
+        width: calc((100% / 7) - 4px); /* Sottrae 4px (2px per lato) dalla larghezza di ogni cella */
+        margin: 2px;
+        height: 40px; /* O qualsiasi altezza preferisci */
+    }
+}
+
+
