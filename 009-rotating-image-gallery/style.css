@@ -39,7 +39,7 @@ body{
 .btn-container{
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    width: 650px;
     margin-top: 72px;
 }
 
