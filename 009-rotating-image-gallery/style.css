@@ -78,3 +78,8 @@ a:link{
 a:hover{
     text-decoration: none;
 }
+
+a:visited{
+    color:orangered;
+}
+
