@@ -102,5 +102,13 @@ a:link{
     color: #fecb6f;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #fecb6f;
+}
+
 
 
