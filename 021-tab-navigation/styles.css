@@ -62,24 +62,6 @@ body {
 
 /* TAB CONTENT STYLES */
 .tab-content {
-  display: none; /* Initially hide all content except the active tab */
-  padding: 20px; /* Padding inside the content area */
-}
-
-.tab-content.active {
-  display: block; /* Show content for the active tab */
-}
-
-h2 {
-  color: #333; /* Dark text color for headings */
-}
-
-p {
-  color: #666; /* Light gray for paragraphs */
-}
-
-/* TAB CONTENT STYLES (UPDATED FOR FADE EFFECT) */
-.tab-content {
   opacity: 0; /* Initially, content is invisible */
   height: 0; /* Content is collapsed when hidden */
   overflow: hidden; /* Prevent content overflow when hidden */
@@ -92,6 +74,14 @@ p {
   height: auto; /* Automatically adjust the height based on content */
   transition: opacity 0.5s ease, height 0s; /* Fade in smoothly */
   padding: 20px; /* Restore padding for visible content */
+}
+
+h2 {
+  color: #333; /* Dark text color for headings */
+}
+
+p {
+  color: #666; /* Light gray for paragraphs */
 }
 
 /* MEDIA QUERIES FOR RESPONSIVE DESIGN */
