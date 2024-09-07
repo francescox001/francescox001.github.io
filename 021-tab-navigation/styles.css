@@ -1,0 +1,71 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tab-container {
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #4CAF50;
+  padding: 10px 0;
+}
+
+/* Styling the buttons */
+.tab-link {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-link.active {
+  background-color: #2e7031;
+}
+
+.tab-link i {
+  font-size: 20px;
+}
+
+.tab-link:hover {
+  background-color: #3e8e41;
+}
+
+.tab-content {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: opacity 0.5s ease, height 0s ease 0.5s; /* Fade effect */
+}
+
+.tab-content.active {
+  opacity: 1;
+  height: auto;
+  transition: opacity 0.5s ease, height 0s;
+  padding: 20px;
+}
